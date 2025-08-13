@@ -1,3 +1,4 @@
+### LINUX CONFIGS
 # To config flask main archive and init server:
 export FLASK_APP=[archive name]
 flask run
@@ -9,3 +10,14 @@ export FLASK_ENV=development
 * Flask >= 2.2
 export FLASK_DEBUG=1
 
+### WINDOWNS CONFIGS
+# To config flask main archive and init server:
+$env:FLASK_APP=[archive name]
+flask run
+
+# To archive debbug mode:
+* Flask <= 2.2
+$env: FLASK_ENV=development
+
+* Flask >= 2.2
+$env:FLASK_DEBUG=1
