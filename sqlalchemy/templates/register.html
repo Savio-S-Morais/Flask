@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register User</h1>
+    <form action="{{ url_for('register') }}" method="post">
+        <label for="iname">Name:</label>
+        <input type="text" name="name" id="iname" required>
+        <br>
+        <label for="icontact">Contact:</label>
+        <input type="number" name="contact" id="icontact" required>
+        <br>
+        <button type="submit" value="Register">Register</button>
+    </form>
+</body>
+</html>

@@ -14,7 +14,7 @@ def about(nameflask):
 @app.route('/<string:url>')
 def error(url):
     url = escape(url) # The function 'escape' remove special character, like HTML characters use for open and close tags
-    return f"Sorry, but the page <i>'{url}'</i> don't exit", 400
+    return f"Sorry, but the page <i>'{url}'</i> doesn't exit", 400
 
 if __name__ == "__main__":
     app.run()

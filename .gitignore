@@ -1,14 +1,17 @@
-# Ignorar ambiente virtual
+# Ignore virtual environment
 venv/
 
-# Ignorar caches do Python
+# Ignore Python caches
 __pycache__/
 **/__pycache__/
 
-# Ignorar arquivos compilados do Python
+# Ignore compiled Python files
 *.pyc
 *.pyo
 *.pyd
 
-# Ignorar arquivos de logs
+# Ignore log files
 *.log
+
+# Ignore database files
+*.db

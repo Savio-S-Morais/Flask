@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+</head>
+<body>
+    <h1>Update User</h1>
+    <form action="{{ url_for('update', id=user.id) }}" method="post">
+        <label for="iname">Name:</label>
+        <input type="text" name="name" id="iname" value="{{ user.name }}">
+        <br>
+        <label for="icontact">Contact:</label>
+        <input type="number" name="contact" id="icontact" value="{{ user.contact }}">
+        <br>
+        <button type="submit" value="Register">Update</button>
+    </form>
+</body>
+</html>
